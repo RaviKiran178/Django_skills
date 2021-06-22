@@ -1,0 +1,382 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+	<!-- saved from url=(0040)http://127.0.0.1:8887/users/register.php -->
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+	<HEAD><META content="IE=10.000" 
+			http-equiv="X-UA-Compatible">
+			<TITLE>Slam book</TITLE>     
+			<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+			<META name="GENERATOR" content="MSHTML 10.00.9200.16384">
+		
+		<STYLE type="text/css">
+			/*Normalize */
+			html { font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        	body { margin: 0; background-color: #f7f7f7; }
+        	a { color: #4089db } a:focus { outline: thin dotted; } a:active, a:hover { outline: 0; }
+        	strong { font-weight: bold; } small { font-size: 80%; }
+        	input { font-family: inherit; font-size: 15px; margin: 0; }
+        	input { line-height: normal; } input[type="submit"] { -webkit-appearance: button; cursor: pointer; }
+        	input::-moz-focus-inner { border: 0; padding: 0; }
+        	ul { margin: 0; }
+
+        	#header{
+				height: 40px;
+            	background: url("header_bg.jpg") 0 0 repeat-x;
+            	width: 100%;
+        	}
+        	.container{
+            	padding: 20px;
+            	margin: 20px auto 0 auto;
+            	font-size: 14px;
+            	text-align: left;
+            	background-color: #fff;
+            	border: solid 1px #bababa;
+            	-webkit-border-radius: 5px;
+            	-moz-border-radius: 5px;
+            	border-radius: 5px;
+			}
+
+        	small{
+	            font-size: 70%;
+            	color: #7c7c7c;
+        	}
+
+        	label{
+				display: block;
+            	font-size: 15px;
+            	line-height: 20px;
+            	margin-bottom: 5px;
+            	color: #404040;
+        	}
+
+        	hr{
+            	background-color: #bababa;
+            	height: 1px;
+            	border: 0;
+        	}
+
+        	input{
+				/*You can set width to whatever you like */    
+				width: 200px;    
+				font-family: "Segoe Script";    
+				font-size: 16px;    
+				margin: 0;    
+				padding: 8px 8px 6px 8px;    
+				position: relative;    
+				display: block;    
+				outline: none;    
+				border: none;    
+				background: bottom left linear-gradient(#a9a9a9, #a9a9a9) no-repeat, bottom center linear-gradient(#a9a9a9, #a9a9a9) repeat-x, bottom right linear-gradient(#a9a9a9, #a9a9a9) no-repeat;    
+				background-size: 1px 6px, 1px 1px, 1px 6px; 
+				align-content: center;
+				text-align:center;
+        	}
+		
+			textarea{
+				/*You can set width to whatever you like */    
+	 			width: 100%;
+				font-family: "Segoe Script";    
+				font-size: 16px;    
+				margin: 0;    
+				padding: 8px 8px 6px 8px;    
+				position: relative;    
+				display: block; 	   
+				outline: none;  	  
+				border: none;    
+				background: bottom left linear-gradient(#a9a9a9, #a9a9a9) no-repeat, bottom center linear-gradient(#a9a9a9, #a9a9a9) repeat-x, bottom right linear-gradient(#a9a9a9, #a9a9a9) no-repeat;    
+				background-size: 1px 6px, 1px 1px, 1px 6px; 
+				align-content:center;
+				text-align:center;
+			}
+				
+			label{
+				color:#C3F;
+			}
+
+        	.submit{
+            	display: inline-block;
+            	height: 35px;
+            	line-height: 35px;
+            	padding: 0 5px;
+            	margin-top: 10px;
+            	color: #ffffff;
+            	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+            	text-decoration: none;
+
+            	border: 0;
+
+            	background-color: #6bc135;
+            	background-image: -moz-linear-gradient(top, #a0e71b, #41af00);
+            	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#a0e71b), to(#41af00));
+            	background-image: -webkit-linear-gradient(top, #a0e71b, #41af00);
+            	background-image: -o-linear-gradient(top, #a0e71b, #41af00);
+            	background-image: linear-gradient(to bottom, #a0e71b, #41af00);
+            	background-repeat: repeat-x;
+        	}
+
+        	.submit:hover{
+            	-webkit-box-shadow: inset rgba(192, 234, 53, 0.75) 0 0 10px;
+            	-moz-box-shadow: inset rgba(192, 234, 53, 0.75) 0 0 10px;
+            	box-shadow: inset rgba(192, 234, 53, 0.75) 0 0 10px;
+        	}
+
+        	.submit:active{
+            	-webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+            	-moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+            	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+        	}
+
+        	.alert, .err_r{
+            	display: block;
+            	position: relative;
+            	padding: 4px;
+	            margin-bottom: 5px;
+    	        font-size: 12px;
+        	    color: #930B0D;
+            	text-align: left;
+	            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    	        background-color: #FEBEBE;
+        	    border: 1px solid #e62b38;
+            	-webkit-border-radius: 3px;
+            	-moz-border-radius: 3px;
+            	border-radius: 3px;
+        	}
+
+        	.login_banner, .account_management{
+            	background-color: #EDFFE7;
+            	padding: 10px;
+            	border: solid 1px #bababa;
+            	-webkit-border-radius: 5px;
+            	-moz-border-radius: 5px;
+            	border-radius: 5px;
+        	}
+
+        	.account_management{
+            	margin-bottom: 10px;
+        	}
+			.gender{
+				width:15px;
+				height:15px;
+			}
+
+        	@media all and (min-width: 1024px)
+			{
+            	.container{
+					width: 80%;
+            	}
+        	}
+
+    		.maboutme {
+				font-family: "Comic Sans MS", cursive;
+				font-size: 10px;
+				background-color: #CCC;
+				position: relative;
+				cursor: auto;
+				border-bottom-style: none;
+				width: 93%;
+				height: 4cm;
+			}
+			.header {
+				padding: 10px 16px;
+				background: #555;
+				color: #f1f1f1;
+			}
+			.content {
+  				padding: 10px;
+			}
+			.sticky {
+  				position: fixed;
+  				top: 0;
+  				width: 100%
+			}
+			.sticky + .content {
+  				padding-top: 102px;
+			}
+		</STYLE>
+	</HEAD>
+	<BODY>
+
+		<marquee bgcolor="#00FF00" onmouseover="this.stop();"onmouseout="this.start();"><pre><h1><b>Please share your info and what you know about me                                           &nbsp; Please share your info and what you know about me</b></h1></pre></marquee>
+		<DIV id="header">
+			<IMG class="XtGem logo" style="margin: 5px 0px 0px 5px;" alt="" src=".jpg">
+		</DIV>
+
+		<div>
+			<center>
+				<H1>Slam Book</H1>
+			</center>	
+		</div>
+	
+		<DIV class="container">
+			<FORM action="slambook.php" method="post">
+				<DIV>
+					<p><strong><font color='red'>*   </font> are required fields </strong></p>
+	  				<p><strong>Name</strong></p>
+					<table width="93%" border="0">
+						<tr>
+							<td><label>First Name:</label><input type="text" name="firstname" required/></td>
+							<td><label>Middle Name:</label><input type="text" name="middlename"/></td>
+							<td><label>Last Name:</label><input type="text" name="lastname" required/></td>
+						</tr>
+						<tr>
+							<td><label><font color='red'>*   </font>Full Name:<br /> (with surname)</label><input type="text" name="fullname" required/></td>
+							<td><label><font color='red'>*   </font>Nick Name:</label><input type="text" name="nickname" required/></td>
+							<td>&nbsp;</td>
+						</tr>
+					</table>
+					<hr />
+					<p><BR><strong>Friends &amp; Family</strong></p>
+					<table width="93%" border="0">
+						<tr>
+							<td><label><font color='red'>*   </font>Father Name:</label><input type="text" name="fathername" required /></td>
+							<td><label><font color='red'>*   </font>Mother Name:</label><input type="text" name="mothername" required /></td>
+							<td><label>Brother / Sister Name:</label><input type="text" name="bsname" /></td>
+						</tr>
+						<tr>
+							<td><label><font color='red'>*   </font>Best Friend Name:</label><input type="text" name="bestfriendname"required /></td>
+							<td><label>First Childhood Friend Name:</label><input type="text" name="firstchildhoodfriendname" /></td>
+							<td><label><font color='red'>*  </font>How do you know me?:</label><input type="text" name="howdidyouknowme" required/></td>
+						</tr>
+					</table>
+					<p><hr />
+						<p><strong>Postal Address</strong></p>
+					</p>
+					<table width="93%" border="0">
+						<tr>
+							<td><label><font color='red'>*  </font>Door / House / Flat No.:</label><input type="text" name="doornumber" required/></td>
+							<td><label>Land Mark:</label><input type="text" name="landmark" /></td>
+							<td><label><font color='red'>*  </font>City / Town / Village Name:</label><input type="text" name="townname" required /></td>
+						</tr>
+						<tr>
+							<td><label><font color='red'>*  </font>District:</label><input type="text" name="distict" required /></td>
+							<td><label><font color='red'>*  </font>State:</label><input type="text" name="state" required/></td>
+							<td><label><font color='red'>*  </font>Country:</label><input type="text" name="country" required /></td>
+						</tr>
+						<tr>
+							<td><label><font color='red'>*  </font>Postal / Zip Code:</label><input type="text" name="postalcode" required/></td>
+							<td></td>
+						</tr>
+					</table>
+					<p><hr />
+						<p><strong>Network Communication</strong></p>
+					</p>
+					<table width="93%" border="0">
+						<tr>
+							<td><label><font color='red'>*  </font>Email Id:</label><input type="text" name="emailid" /></td>
+							<td><label><font color='red'>*  </font>Facebook:</label><input type="text" name="facebook" /></td>
+							<td><label><font color='red'>*  </font>Instagram Id:</label><input type="text" name="skype" /></td>
+						</tr>
+						<tr>
+							<td><label>Linked In:</label><input type="text" name="linkedin" /></td>
+							<td><label>Website:</label><input type="text" name="website" /></td>
+							<td><label>Other Id's</label><input type="text" name="otherid" /></td>
+						</tr>
+					</table>
+					<p><hr />
+						<p><strong>Mobile Network Communication</strong></p>
+					</p>
+					<table width="93%" border="0">
+						<tr>
+							<td><label><font color='red'>*  </font>Mobile Number:<br /> (with country code)</label><input type="text" name="mobilenumber" /></td>
+							<td><label><font color='red'>*  </font>What's app No.:<br /> (Current No.)</label><input type="text" name="landlinenumber" /></td>
+							<td><label>Land Line Number:<br /> (with STD code)</label><input type="text" name="voipnumber" /></td>
+						</tr>
+					</table>
+					<p><hr />
+						<p><strong>Personal Information</strong></p>
+					</p>
+					<table width="93%" border="0">
+						<tr>
+							<td width="31%"><label><font color='red'>*  </font>Date Of Birth:</label><input type="date" name="dateofbirth" /></td>
+							<td width="31%"><label><font color='red'> *   </font>Zodiac / Astro Sign:</label><input type="text" name="zodiacsign" required/></td>
+							<td width="31%">
+								<tr>
+									<td class ="gender"><label><font color='red'>*  </font>Gender:</label></td>
+									<td><input type="radio" name="gender" value="Male" class ="gender"/>Male</td>
+									<td width="31%"><label><font color='red'></font></label><input type="radio" name="gender" value="Female" class="gender"/>Female</td>
+								</tr>
+							</td>
+						</tr>
+					</table>
+					<p><hr />
+						<p><strong>Likes and Dislikes</strong></p>
+					</p>
+					<table width="93%" border="0">
+						<tr>
+							<td><label>Favourite Color:</label><input type="text" name="favcolor"></td>
+							<td><label>Favourite Dress:</label><input type="text" name="favdress"></td>
+							<td><label>Favourite Music:</label><input type="text" name="favmusic"></td>
+						</tr>
+						<tr>
+							<td><label>Favourite Game:</label><input type="text" name="favgame"></td>
+							<td><label>Favourite Dish:</label><input type="text" name="favdish"></td>
+							<td><label>Favourite Book:</label><input type="text" name="favbook"></td>
+						</tr>
+						<tr>
+							<td><label>Favourite Actor:</label><input type="text" name="favactor"></td>
+							<td><label>Favourite Sports Person:</label><input type="text" name="favsportsperson"></td>
+							<td><label>More Interest About:</label><input type="text" name="moreinterestabout"></td>
+						</tr>
+						<tr>
+							<td><label>Things you like mostly:</label><input type="text" name="thingsyoulikemostly"></td>
+							<td><label>Funniest moment in your life:</label><input type="text" name="funniestmoment"></td>
+							<td><label>Crazy about things like:</label><input type="text" name="crazyaboutthings"></td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td><label>Dislike dish:</label><input type="text" name="dislikedish"></td>
+							<td><label>Dislike things:</label><input type="text" name="dislikethingst"></td>
+							<td><label>Any other dislike:</label><input type="text" name="anyotherdislikes"></td>
+						</tr>	    
+					</table>
+					<p><hr />
+						<p><strong>On Ravi Kiran</strong></p>
+					</p>
+					<table width="93%" border="0">
+						<tr>
+							<td><label><font color='red'>*  </font>What you like on me:</label><input type="text" name="whatyoulikeonme" /></td>
+							<td><label><font color='red'>*  </font>What you dislike on me:</label><input type="text" name="whatyoudislikeonme" /></td>
+							<td><label><font color='red'>*  </font>Most remember moment with me:</label><input type="text" name="mostremembermomentwithme" /></td>
+						</tr>
+						<tr>
+							<td><label><font color='red'>*  </font>Suggestions to me:</label><input type="text" name="suggestionstome" /></td>
+							<td><label><font color='red'>*  </font>Most undesirable moment by me:</label><input type="text" name="undesirablemonentbyme" /></td>
+							<td><label><font color='red'>*  </font>First meet with me:</label><input type="text" name="firstmeetwithme" /></td>
+						</tr>
+					</table>
+					<p><hr />
+						<p><strong>Goals and Inspirations</strong></p>
+					</p>
+					<table width="93%" border="0">
+						<tr>
+							<td><label>Life ambition:</label><input type="text" name="lifeambition" /></td>
+							<td><label>Inspired by:</label><input type="text" name="inspiredby" /></td>
+							<td><label>Your role model:</label><input type="text" name="yourrolemodel" /></td>
+						</tr>
+					</table>
+					<p><hr />
+						<p><strong>About You</strong></p>
+					</p>
+					<table width="94%" height="108" border="0">
+						<tr>
+							<td><label><font color='red'>*  </font>About Your Self:</label>
+								<textarea name="aboutyou" >About me</textarea>
+							</td>
+						</tr>
+					</table>
+					<p>&nbsp;</p>
+					<p><strong><font color='red'>NOTE: </font>If you don't know any required field above mentioned please fill it as NILL</strong></p>
+					<div>
+						<input type="submit" class="submit" value="submit" name="login" />
+					</div>
+				</DIV>
+			</FORM>
+		</DIV>
+		<hr/>
+		<center>
+			<p><strong><em>&copy; Ravi kiran-2014</em></strong></p>
+			<p><strong>slambook version 2.0.0</strong></p>
+			<p><em>All rights reserved to VRV Solutions</em></p>
+		</center>
+	</BODY>
+</HTML>
